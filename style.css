@@ -53,9 +53,10 @@ header {
 }
 
 .logo img {
-  max-height: 50px;
-  width: auto;
+  height: 100px; /* or any size you want */
+  width: auto;    /* keeps aspect ratio */
   display: block;
+}
 }
 }
 
@@ -259,4 +260,5 @@ footer {
     height: 800px;
   }
 }
+
 
