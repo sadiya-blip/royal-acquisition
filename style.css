@@ -58,18 +58,12 @@ header {
 }
 
 .logo img {
-  height: 140px;              /* set desired logo height */
-  width: auto;                 /* keep aspect ratio */
-  display: block;
-  background-color: white;    /* contrast background */
-  padding: 8px 12px;           /* spacing around logo */
-  border-radius: 10px;        /* rounded corners */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25); /* shadow for depth */
-  transition: transform 0.3s;  /* smooth hover effect */
-}
-
-.logo img:hover {
-  transform: scale(1.05);      /* zoom on hover */
+  position: absolute;
+  z-index: 9999;
+  height: 140px;
+  width: auto;
+  background-color: white;
+  padding: 10px;
 }
 }
 
@@ -314,6 +308,7 @@ footer {
     height: 800px;
   }
 }
+
 
 
 
