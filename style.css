@@ -52,19 +52,24 @@ header {
   z-index: 1000;
 }
 
+.logo {
+  position: relative;          /* establish positioning context */
+  z-index: 10;                 /* raise the logo layer above other elements */
+}
+
 .logo img {
-  height: 140px; /* bigger logo for visibility */
-  width: auto; /* maintain aspect ratio */
+  height: 140px;              /* set desired logo height */
+  width: auto;                 /* keep aspect ratio */
   display: block;
-  background-color: white; /* adds contrast for royal blue logo */
-  padding: 8px 12px; /* space around logo */
-  border-radius: 10px; /* slightly rounded corners */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25); /* subtle shadow to make it pop */
-  transition: transform 0.3s; /* smooth hover effect */
+  background-color: white;    /* contrast background */
+  padding: 8px 12px;           /* spacing around logo */
+  border-radius: 10px;        /* rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25); /* shadow for depth */
+  transition: transform 0.3s;  /* smooth hover effect */
 }
 
 .logo img:hover {
-  transform: scale(1.05); /* small zoom effect on hover */
+  transform: scale(1.05);      /* zoom on hover */
 }
 }
 
@@ -309,6 +314,7 @@ footer {
     height: 800px;
   }
 }
+
 
 
 
