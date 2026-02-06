@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Acquisition</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="logo">ROYAL ACQUISITION</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Services</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Accelerating Business Growth with Smart Strategies</h1>
+            <p>
+                We help businesses generate predictable revenue, optimize operations, 
+                and achieve sustainable growth with expert consulting.
+            </p>
+
+            <a href="#" class="btn-gold">Book a Call</a>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="services">
+        <h2>Our Core Expertise</h2>
+
+        <div class="service-container">
+            <div class="service-box">
+                <h3>Business Consulting</h3>
+                <p>Helping companies define strategy and execute for real results.</p>
+            </div>
+
+            <div class="service-box">
+                <h3>Lead Generation</h3>
+                <p>Building high-quality pipelines for consistent revenue.</p>
+            </div>
+
+            <div class="service-box">
+                <h3>Process Optimization</h3>
+                <p>Improving business operations for better efficiency.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CALL TO ACTION -->
+    <section class="cta">
+        <h2>Ready to Grow Your Business?</h2>
+        <p>Schedule a free consultation with our experts today.</p>
+        <a href="#" class="btn-gold">Schedule a Call</a>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 Royal Acquisition. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
