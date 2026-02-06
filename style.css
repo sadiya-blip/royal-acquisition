@@ -53,7 +53,10 @@ header {
 }
 
 .logo img {
-  height: 50px;
+  max-height: 50px;
+  width: auto;
+  display: block;
+}
 }
 
 nav a {
@@ -256,3 +259,4 @@ footer {
     height: 800px;
   }
 }
+
