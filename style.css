@@ -146,6 +146,7 @@ ul li {
   justify-content: center;
   margin-top: 40px;
   overflow-x: auto;
+  padding-bottom: 20px; /* add some spacing at bottom */
 }
 
 .flow-svg {
@@ -154,27 +155,66 @@ ul li {
   height: 600px;
 }
 
+/* Step circles */
 .step circle {
   transition: transform 0.3s, filter 0.3s;
   cursor: pointer;
+  stroke: #C9A227; /* optional outline for visibility */
+  stroke-width: 2;
 }
 
+/* Hover effects for steps */
 .step:hover circle {
   transform: scale(1.2);
   filter: drop-shadow(0 0 15px #C9A227);
 }
 
+/* Step text */
 .step text {
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
+  font-weight: 600;
+  fill: #C9A227;
+  pointer-events: none; /* ensures hovering circle doesn't block text */
 }
 
+/* Step icon */
 .step image {
   transition: transform 0.3s;
 }
 
+/* Hover effect on icon */
 .step:hover image {
   transform: scale(1.2);
+}
+
+/* Animated arrows */
+.flow-svg circle[fill="#C9A227"] {
+  filter: drop-shadow(0 0 8px #C9A227);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .flow-svg {
+    height: 800px;
+  }
+
+  .step text {
+    font-size: 12px;
+  }
+
+  .step image {
+    width: 30px !important;
+    height: 30px !important;
+    x: -15px !important;
+    y: -15px !important;
+  }
+
+  /* Optional: stack steps vertically for very small screens */
+  .flowchart-container {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 /* ------------------------- TESTIMONIALS ------------------------- */
@@ -263,6 +303,7 @@ footer {
     height: 800px;
   }
 }
+
 
 
 
