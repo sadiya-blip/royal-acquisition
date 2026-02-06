@@ -53,12 +53,15 @@ header {
 }
 
 .logo img {
-  height: 100px; /* or any size you want */
-  width: auto;    /* keeps aspect ratio */
+  height: 100px; /* bigger logo */
+  width: auto;
   display: block;
+  background-color: white; /* or very light transparent */
+  padding: 5px 10px; /* adds some space around logo */
+  border-radius: 8px; /* optional, rounded corners */
 }
 }
-}
+
 
 nav a {
   margin-left: 20px;
@@ -260,5 +263,6 @@ footer {
     height: 800px;
   }
 }
+
 
 
