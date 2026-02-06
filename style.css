@@ -6,9 +6,9 @@
     font-family: 'Montserrat', sans-serif;
 }
 body {
-    color: #4A4A4A;
+    color: #000000;
     line-height: 1.6;
-    background: #fff;
+    background: #FFFFFF;
 }
 
 /* ===== HEADER ===== */
@@ -17,8 +17,8 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px 10%;
-    background: #0A2A8F;
-    color: #fff;
+    background: #0A2A8F; /* Royal Blue */
+    color: #FFFFFF;
     position: sticky;
     top: 0;
     z-index: 100;
@@ -28,20 +28,20 @@ header .logo {
     font-weight: 700;
 }
 header nav a {
-    color: #fff;
+    color: #FFFFFF;
     margin-left: 25px;
     text-decoration: none;
     font-weight: 600;
     transition: 0.3s;
 }
 header nav a:hover {
-    color: #C9A227;
+    color: #C9A227; /* Gold */
 }
 
-/* ===== HERO SECTION ===== */
+/* ===== HERO ===== */
 .hero {
-    background: #061A5C;
-    color: #fff;
+    background: #0A2A8F; /* Royal Blue */
+    color: #FFFFFF;
     padding: 100px 10%;
     display: flex;
     flex-wrap: wrap;
@@ -52,18 +52,15 @@ header nav a:hover {
     font-size: 2.8rem;
     margin-bottom: 20px;
 }
-.hero-text p {
+.hero-text p, .hero-text .supporting-line {
     font-size: 1.2rem;
     margin-bottom: 15px;
-}
-.hero-text .supporting-line {
-    font-style: italic;
-    margin-bottom: 30px;
+    color: #FFFFFF;
 }
 .hero-image img {
     max-width: 100%;
     border-radius: 10px;
-    border: 5px solid #C9A227;
+    border: 5px solid #C9A227; /* Gold */
 }
 
 /* ===== BUTTONS ===== */
@@ -77,22 +74,23 @@ header nav a:hover {
     margin: 5px 5px 15px 0;
 }
 .btn-primary {
-    background: #C9A227;
-    color: #061A5C;
+    background: #C9A227; /* Gold */
+    color: #0A2A8F; /* Royal Blue for text */
     border: none;
 }
 .btn-primary:hover {
-    background: #D4AF37;
-    color: #061A5C;
+    background: #FFFFFF;
+    color: #0A2A8F;
+    border: 2px solid #C9A227;
 }
 .btn-secondary {
     background: transparent;
-    color: #C9A227;
+    color: #C9A227; /* Gold */
     border: 2px solid #C9A227;
 }
 .btn-secondary:hover {
     background: #C9A227;
-    color: #061A5C;
+    color: #0A2A8F;
 }
 
 /* ===== SECTIONS ===== */
@@ -100,19 +98,17 @@ section {
     padding: 80px 10%;
 }
 .section-white {
-    background: #fff;
+    background: #FFFFFF;
+    color: #000000;
 }
 .section-light {
-    background: #f5f5f5;
+    background: #FFFFFF;
+    color: #000000;
 }
 section h2 {
     font-size: 2rem;
-    color: #0A2A8F;
+    color: #0A2A8F; /* Royal Blue */
     margin-bottom: 25px;
-}
-ul, ol {
-    margin-left: 20px;
-    margin-bottom: 15px;
 }
 
 /* ===== SERVICE & TESTIMONIAL BOXES ===== */
@@ -122,8 +118,8 @@ ul, ol {
     gap: 20px;
 }
 .service-box, .testimonial-box {
-    background: #fff;
-    border: 2px solid #C9A227;
+    background: #FFFFFF;
+    border: 2px solid #C9A227; /* Gold */
     padding: 20px;
     border-radius: 8px;
     flex: 1 1 30%;
@@ -135,11 +131,8 @@ ul, ol {
     margin-bottom: 15px;
 }
 .service-box:hover, .testimonial-box:hover {
-    background: #C9A227;
-    color: #061A5C;
-}
-.service-box:hover h3, .service-box:hover p {
-    color: #061A5C;
+    background: #C9A227; /* Gold hover */
+    color: #0A2A8F; /* Royal Blue text */
 }
 
 /* ===== FORM ===== */
@@ -152,7 +145,7 @@ ul, ol {
 }
 .contact-form input, .contact-form textarea {
     padding: 12px;
-    border: 2px solid #C9A227;
+    border: 2px solid #C9A227; /* Gold */
     border-radius: 5px;
     font-size: 1rem;
     width: 100%;
@@ -160,11 +153,11 @@ ul, ol {
 }
 .contact-form input:focus, .contact-form textarea:focus {
     outline: none;
-    border-color: #0A2A8F;
+    border-color: #0A2A8F; /* Royal Blue */
 }
 .contact-form button {
-    background: #C9A227;
-    color: #061A5C;
+    background: #C9A227; /* Gold */
+    color: #0A2A8F; /* Royal Blue */
     padding: 12px;
     font-weight: 600;
     border-radius: 5px;
@@ -173,7 +166,9 @@ ul, ol {
     border: none;
 }
 .contact-form button:hover {
-    background: #D4AF37;
+    background: #FFFFFF;
+    color: #0A2A8F;
+    border: 2px solid #C9A227;
 }
 
 /* ===== CONTACT INFO CARDS ===== */
@@ -186,46 +181,37 @@ ul, ol {
 }
 .contact-card {
     flex: 1 1 250px;
-    background: #0A2A8F;
-    color: #fff;
+    background: #0A2A8F; /* Royal Blue */
+    color: #FFFFFF;
     padding: 20px;
     border-radius: 8px;
     text-align: center;
     transition: 0.3s;
 }
 .contact-card:hover {
-    background: #061A5C;
+    background: #C9A227; /* Gold hover */
+    color: #0A2A8F; /* Text changes */
 }
 .contact-card a {
-    color: #C9A227;
+    color: #C9A227; /* Gold */
     text-decoration: none;
     font-weight: 600;
 }
-.contact-card a:hover {
-    text-decoration: underline;
-}
+.contact-card a:hover { text-decoration: underline; }
 
 /* ===== FOOTER ===== */
 footer {
     text-align: center;
     padding: 30px 10%;
-    background: #061A5C;
-    color: #fff;
+    background: #0A2A8F; /* Royal Blue */
+    color: #FFFFFF;
 }
 
 /* ===== RESPONSIVE ===== */
 @media screen and (max-width: 768px) {
-    header {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    header nav {
-        margin-top: 10px;
-    }
-    .hero {
-        flex-direction: column;
-        text-align: center;
-    }
+    header { flex-direction: column; align-items: flex-start; }
+    header nav { margin-top: 10px; }
+    .hero { flex-direction: column; text-align: center; }
     .hero-text { flex: 1 1 100%; }
     .hero-image { flex: 1 1 100%; margin-top: 20px; }
     .service-container, .testimonial-container, .contact-info { flex-direction: column; }
